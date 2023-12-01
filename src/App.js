@@ -1,46 +1,46 @@
-import { useState } from "react";
-import { v4 as uuidv4 } from "uuid";
-import Banner from "./componentes/Banner";
-import Formulario from "./componentes/Formulario";
-import Rodape from "./componentes/Rodape";
-import Time from "./componentes/Time";
+import { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
+import Banner from './componentes/Banner';
+import Formulario from './componentes/Formulario';
+import Rodape from './componentes/Rodape';
+import Time from './componentes/Time';
 
 function App() {
   const [times, setTimes] = useState([
     {
       id: uuidv4(),
-      nome: "Programação",
-      cor: "#57C278",
+      nome: 'Programação',
+      cor: '#57C278',
     },
     {
       id: uuidv4(),
-      nome: "Front-End",
-      cor: "#82CFFA",
+      nome: 'Front-End',
+      cor: '#82CFFA',
     },
     {
       id: uuidv4(),
-      nome: "Data Science",
-      cor: "#A6D157",
+      nome: 'Data Science',
+      cor: '#A6D157',
     },
     {
       id: uuidv4(),
-      nome: "Devops",
-      cor: "#E06B69",
+      nome: 'Devops',
+      cor: '#E06B69',
     },
     {
       id: uuidv4(),
-      nome: "UX e Design",
-      cor: "#DB6EBF",
+      nome: 'UX e Design',
+      cor: '#DB6EBF',
     },
     {
       id: uuidv4(),
-      nome: "Mobile",
-      cor: "#FFBA05",
+      nome: 'Mobile',
+      cor: '#FFBA05',
     },
     {
       id: uuidv4(),
-      nome: "Inovação e Gestão",
-      cor: "#FF8A29",
+      nome: 'Inovação e Gestão',
+      cor: '#FF8A29',
     },
   ]);
 
@@ -48,226 +48,227 @@ function App() {
     {
       id: uuidv4(),
       favorito: false,
-      nome: "JULIANA AMOASEI",
-      cargo: "Desenvolvedora de software e instrutora",
+      nome: 'JULIANA AMOASEI',
+      cargo: 'Desenvolvedora de software e instrutora',
       imagem:
-        "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
+        'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
       time: times[0].nome,
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: "DANIEL ARTINE",
-      cargo: "Engenheiro de Software na Stone Age",
+      nome: 'DANIEL ARTINE',
+      cargo: 'Engenheiro de Software na Stone Age',
       imagem:
-        "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
+        'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
       time: times[0].nome,
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: "GUILHERME LIMA",
-      cargo: "Desenvolvedor Python e JavaScript na Alura",
+      nome: 'GUILHERME LIMA',
+      cargo: 'Desenvolvedor Python e JavaScript na Alura',
       imagem:
-        "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
+        '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
       time: times[0].nome,
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: "PAULO SILVEIRA",
-      cargo: "Hipster e CEO da Alura",
+      nome: 'PAULO SILVEIRA',
+      cargo: 'Hipster e CEO da Alura',
       imagem:
-        "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
+        'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
       time: times[0].nome,
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: "JULIANA AMOASEI",
-      cargo: "Desenvolvedora de software e instrutora",
+      nome: 'JULIANA AMOASEI',
+      cargo: 'Desenvolvedora de software e instrutora',
       imagem:
-        "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
+        'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
       time: times[1].nome,
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: "DANIEL ARTINE",
-      cargo: "Engenheiro de Software na Stone Age",
+      nome: 'DANIEL ARTINE',
+      cargo: 'Engenheiro de Software na Stone Age',
       imagem:
-        "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
+        'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
       time: times[1].nome,
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: "GUILHERME LIMA",
-      cargo: "Desenvolvedor Python e JavaScript na Alura",
+      nome: 'GUILHERME LIMA',
+      cargo: 'Desenvolvedor Python e JavaScript na Alura',
       imagem:
-        "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
+        '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
       time: times[1].nome,
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: "PAULO SILVEIRA",
-      cargo: "Hipster e CEO da Alura",
+      nome: 'PAULO SILVEIRA',
+      cargo: 'Hipster e CEO da Alura',
       imagem:
-        "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
+        'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
       time: times[1].nome,
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: "JULIANA AMOASEI",
-      cargo: "Desenvolvedora de software e instrutora",
+      nome: 'JULIANA AMOASEI',
+      cargo: 'Desenvolvedora de software e instrutora',
       imagem:
-        "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
+        'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
       time: times[2].nome,
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: "DANIEL ARTINE",
-      cargo: "Engenheiro de Software na Stone Age",
+      nome: 'DANIEL ARTINE',
+      cargo: 'Engenheiro de Software na Stone Age',
       imagem:
-        "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
+        'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
       time: times[2].nome,
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: "GUILHERME LIMA",
-      cargo: "Desenvolvedor Python e JavaScript na Alura",
+      nome: 'GUILHERME LIMA',
+      cargo: 'Desenvolvedor Python e JavaScript na Alura',
       imagem:
-        "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
+        '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
       time: times[2].nome,
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: "PAULO SILVEIRA",
-      cargo: "Hipster e CEO da Alura",
+      nome: 'PAULO SILVEIRA',
+      cargo: 'Hipster e CEO da Alura',
       imagem:
-        "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
+        'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
       time: times[2].nome,
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: "JULIANA AMOASEI",
-      cargo: "Desenvolvedora de software e instrutora",
+      nome: 'JULIANA AMOASEI',
+      cargo: 'Desenvolvedora de software e instrutora',
       imagem:
-        "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
+        'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
       time: times[3].nome,
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: "DANIEL ARTINE",
-      cargo: "Engenheiro de Software na Stone Age",
+      nome: 'DANIEL ARTINE',
+      cargo: 'Engenheiro de Software na Stone Age',
       imagem:
-        "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
+        'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
       time: times[3].nome,
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: "GUILHERME LIMA",
-      cargo: "Desenvolvedor Python e JavaScript na Alura",
+      nome: 'GUILHERME LIMA',
+      cargo: 'Desenvolvedor Python e JavaScript na Alura',
       imagem:
-        "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
+        '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
       time: times[3].nome,
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: "PAULO SILVEIRA",
-      cargo: "Hipster e CEO da Alura",
+      nome: 'PAULO SILVEIRA',
+      cargo: 'Hipster e CEO da Alura',
       imagem:
-        "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
+        'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
       time: times[3].nome,
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: "JULIANA AMOASEI",
-      cargo: "Desenvolvedora de software e instrutora",
+      nome: 'JULIANA AMOASEI',
+      cargo: 'Desenvolvedora de software e instrutora',
       imagem:
-        "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
+        'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
       time: times[4].nome,
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: "DANIEL ARTINE",
-      cargo: "Engenheiro de Software na Stone Age",
+      nome: 'DANIEL ARTINE',
+      cargo: 'Engenheiro de Software na Stone Age',
       imagem:
-        "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
+        'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
       time: times[4].nome,
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: "GUILHERME LIMA",
-      cargo: "Desenvolvedor Python e JavaScript na Alura",
+      nome: 'GUILHERME LIMA',
+      cargo: 'Desenvolvedor Python e JavaScript na Alura',
       imagem:
-        "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
+        '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
       time: times[4].nome,
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: "PAULO SILVEIRA",
-      cargo: "Hipster e CEO da Alura",
+      nome: 'PAULO SILVEIRA',
+      cargo: 'Hipster e CEO da Alura',
       imagem:
-        "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
+        'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
       time: times[4].nome,
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: "JULIANA AMOASEI",
-      cargo: "Desenvolvedora de software e instrutora",
+      nome: 'JULIANA AMOASEI',
+      cargo: 'Desenvolvedora de software e instrutora',
       imagem:
-        "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
+        'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
       time: times[5].nome,
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: "DANIEL ARTINE",
-      cargo: "Engenheiro de Software na Stone Age",
+      nome: 'DANIEL ARTINE',
+      cargo: 'Engenheiro de Software na Stone Age',
       imagem:
-        "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
+        'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
       time: times[5].nome,
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: "GUILHERME LIMA",
-      cargo: "Desenvolvedor Python e JavaScript na Alura",
+      nome: 'GUILHERME LIMA',
+      cargo: 'Desenvolvedor Python e JavaScript na Alura',
       imagem:
-        "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
+        '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
       time: times[5].nome,
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: "PAULO SILVEIRA",
-      cargo: "Hipster e CEO da Alura",
+      nome: 'PAULO SILVEIRA',
+      cargo: 'Hipster e CEO da Alura',
       imagem:
-        "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
+        'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
       time: times[5].nome,
     },
   ];
 
   const [colaboradores, setColaboradores] = useState(inicial);
+  const [mostrarFormulario, setMostrarFormulario] = useState(true);
 
   function deletarColaborador(id) {
     setColaboradores(
-      colaboradores.filter((colaborador) => colaborador.id !== id)
+      colaboradores.filter((colaborador) => colaborador.id !== id),
     );
   }
 
@@ -278,7 +279,7 @@ function App() {
           time.cor = cor;
         }
         return time;
-      })
+      }),
     );
   }
 
@@ -298,26 +299,38 @@ function App() {
         }
 
         return colaborador;
-      })
+      }),
     );
+  }
+
+  function displayFormulario() {
+    setMostrarFormulario(!mostrarFormulario);
   }
 
   return (
     <div>
       <Banner />
-      <Formulario
-        cadastrarTime={cadastrarTime}
-        times={times.map((time) => time.nome)}
-        aoCadastrar={aoCadastrar}
-      />
+      {mostrarFormulario && (
+        <Formulario
+          cadastrarTime={cadastrarTime}
+          times={times.map((time) => time.nome)}
+          aoCadastrar={aoCadastrar}
+        />
+      )}
       <section className="times">
-        <h1>Minha organização</h1>
+        <div className="times-header">
+          <h1>Minha organização</h1>
+          <button className="btn-add" onClick={displayFormulario}>
+            <img src="imagens/btn-icone.png" alt="Ícones de Botões" />
+          </button>
+        </div>
+
         {times.map((time) => (
           <Time
             key={time.id}
             time={time}
             colaboradores={colaboradores.filter(
-              (colaborador) => colaborador.time === time.nome
+              (colaborador) => colaborador.time === time.nome,
             )}
             aoDeletar={deletarColaborador}
             mudarCor={mudarCorDoTime}
